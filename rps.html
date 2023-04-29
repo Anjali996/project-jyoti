@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissors</title>
+    <link rel="stylesheet" href="rps.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+</head>
+<body class="preload">
+  <div class="box-container">
+
+      <section1>
+        <div class="container">
+            <div class="left">
+                <h1 id="rps1">
+                    Rock<br>Paper<br>Scissors
+                </h1>
+    
+    
+                <div class="score">
+    
+                
+                
+    
+                  <div class="computer-score">
+                      <h4 >Computer<br> Score</h4>
+                      <p id="rps2">0</p>
+    
+                    </div>
+                    
+                
+                       <div class="player-score">
+                          <h4 style="position: absolute; left: 75px;">    Your<br>    Score</h4>
+                         <p id="rps2" >0</p>
+                        </div>
+                    
+                </div>
+                
+             </div>  
+            </div>
+        </div>
+    </section1>
+        <section class="game">
+
+          <div class="line">
+            <div > <img src="Line 1.png" id="a1"> </div>
+            <div > <img src="Line 2.png" id="a2"> </div>
+            <div > <img src="Line 3.png" id="a3"> </div>
+         
+         </div>
+
+
+
+         
+
+         <div class="ellipse1"  style="position: absolute; top:200px; left:331px; ">
+          <button class="choice-btn" data-choice="paper" style="height: 115px; width: 115px; border-radius: 50%; border:15px solid rgba(255, 169, 67, 1);">
+            <div >
+              <img src="icon-Paper.png" alt="Paper"  />
+            </div>
+          </button>
+          </div>
+
+          <div class="ellipse2"   style="position: absolute; top:33px; left:440px; ">
+          <button class="choice-btn" data-choice="scissors"  style="height: 115px; width: 115px; border-radius: 50%; border: 15px solid rgba(189, 0, 255, 1);">
+            <div >
+              <img src="icon-scissors.png" alt="Scissors" />
+            </div>
+          </button>
+        </div>
+
+
+          <div class="ellipse3"  style="position: absolute; top:33px; left:240px; ">
+          <button class="choice-btn" data-choice="rock" style="height: 115px; width: 115px; border-radius: 50%; border:15px solid rgba(0, 116, 182, 1) ;">
+            <div >
+              <img src="icon-rock.png" alt="Rock" />
+            </div>
+          </div>
+          </button>
+          </section>
+          
+        
+      </div>
+  
+      <section class="results hidden">
+        <h2 class="results__heading">you picked</h2>
+        <h2 class="results__heading">pc picked</h2>
+        <div class="results__result"></div>
+
+        <div class="results__winner hidden">
+          <h3 class="results__text"></h3>
+          <button class="play-again">play again</button>
+          <button class="Next">NEXT</button>
+        
+        </div>
+
+        <div class="results__result"></div>
+      </section>
+  
+      
+
+
+
+
+       <button class="open-button" onclick="openForm()">RULE</button>
+
+        <div class="form-popup" id="myForm">
+        <form  class="form-container">
+         <h1 ID="a10">GAME RULES</h1>
+         <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+        <li> Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+        <li>If both players lay down the same hand, each player lays down another hand</li>
+
+
+      </ul>
+  
+
+      <button type="button" class="btn-cancel" onclick="closeForm()">
+        <div>
+            <img src="X.png">
+        </div>
+    </button>
+    </form>
+    </div>
+
+
+    <script src="rps.js"></script>
+  </div>
+</body>
+</html>
